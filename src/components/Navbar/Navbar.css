@@ -1,31 +1,32 @@
 .navbar {
-display: flex;
-justify-content: space-around;
-align-items: center;
-align-content: center;
-border-bottom: 1px solid #8F857D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid #8f857d;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .logoLink {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .menu-items {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
 }
 
 .navLink {
-    text-decoration: none;
-    color: #60D394;
-    font-size: 1rem;
+  text-decoration: none;
+  color: #60d394;
+  font-size: 1rem;
 }
