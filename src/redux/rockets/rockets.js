@@ -24,8 +24,11 @@ export function rocketsReducer(state = initialState, action = {}) {
 export const LoadRockets = createAsyncThunk(LOAD, async () => {
   const response = await axios.get(rocketsAPI);
   const rockets = Object.keys(response.data).map((key) => ({
-    id: key,
-    ...response.data[key][0],
+    id: response.data[key].id,
+    rocketName: response.data[key].rocket_name,
+    description: response.data[key].description,
+    flickrImage: response.data[key].flickr_images,
+    reserved: 'false',
   }));
   return rockets;
 });
