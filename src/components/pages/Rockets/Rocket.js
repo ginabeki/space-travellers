@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 export default function Rocket(props) {
   const { rocket } = props;
@@ -24,13 +24,3 @@ export default function Rocket(props) {
     </div>
   );
 }
-
-Rocket.propTypes = {
-  rocket: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    rocketName: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    flickrImage: PropTypes.string.isRequired,
-    reserved: PropTypes.string.isRequired,
-  }).isRequired,
-};
