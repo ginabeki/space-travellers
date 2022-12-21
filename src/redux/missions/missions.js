@@ -24,8 +24,9 @@ export function missionsReducer(state = initialState, action = {}) {
 export const LoadMissions = createAsyncThunk(LOAD, async () => {
   const response = await axios.get(missionsAPI);
   const missions = Object.keys(response.data).map((key) => ({
-    id: key,
-    ...response.data[key][0],
+    id: response.data[key].mission_id,
+    missionName: response.data[key].mission_name,
+    description: response.data[key].description,
   }));
   return missions;
 });
