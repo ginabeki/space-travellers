@@ -33,7 +33,7 @@ export function missionsReducer(state = initialState, action = {}) {
       return {
         ...state,
         missions: state.missions.map((mission) => {
-          if (mission.mission_id !== action.id) {
+          if (mission.id !== action.id) {
             return { ...mission };
           }
           return { ...mission, reserved: true };
@@ -43,7 +43,7 @@ export function missionsReducer(state = initialState, action = {}) {
       return {
         ...state,
         missions: state.missions.map((mission) => {
-          if (mission.mission_id !== action.id) {
+          if (mission.id !== action.id) {
             return { ...mission };
           }
           return { ...mission, reserved: false };
