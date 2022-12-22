@@ -1,0 +1,64 @@
+.each-rocket-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rocket-li {
+  padding: 1.5rem 3rem 0 3rem;
+}
+
+.rocket-image {
+  width: 18rem;
+  height: 15.5rem;
+}
+
+.reserve-rocket {
+  color: white;
+  background-color: #007bff;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border-color: #007bff;
+  max-width: 10rem;
+}
+
+.cancel-rocket-reservation {
+  background-color: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  max-width: 10rem;
+}
+
+.rocket-left-side {
+  width: 23%;
+  height: 100%;
+  float: left;
+}
+
+.rocket-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 77%;
+  height: 100%;
+  float: right;
+}
+
+.rocket-description {
+  font-size: 16px;
+}
+
+.reserved-span {
+  display: inline-block;
+  color: white;
+  background-color: #30abbf;
+  padding: 2px 2px 2px 2px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.reserved-span + .rocket-description {
+  padding-left: 1rem;
+}
