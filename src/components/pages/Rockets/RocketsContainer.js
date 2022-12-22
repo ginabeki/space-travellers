@@ -8,7 +8,9 @@ export const RocketsContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(LoadRockets());
+    if (rockets.length === 0) {
+      dispatch(LoadRockets());
+    }
   }, [dispatch]);
 
   return (

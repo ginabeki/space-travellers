@@ -1,11 +1,14 @@
 .each-rocket-table {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  list-style: none;
 }
 
 .rocket-li {
-  padding: 1.5rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
 }
 
 .rocket-image {
@@ -31,7 +34,7 @@
   max-width: 10rem;
 }
 
-.rocket-left-side {
+/* .rocket-left-side {
   width: 23%;
   height: 100%;
   float: left;
@@ -44,7 +47,7 @@
   width: 77%;
   height: 100%;
   float: right;
-}
+} */
 
 .rocket-description {
   font-size: 16px;
