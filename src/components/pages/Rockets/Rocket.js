@@ -1,26 +1,33 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import './rocket.css';
+import { reserveRocket, cancelReserveRocket } from '../../../redux/rockets/rockets';
 
 export default function Rocket(props) {
   const { rocket } = props;
   const {
     id, rocketName, description, flickrImage, reserved,
   } = rocket;
-  console.log('Reserved', reserved);
+  const dispatch = useDispatch();
 
   return (
-    <div>
-      <img src={flickrImage} alt={flickrImage} />
-      <br />
-      <h2>{id}</h2>
-      <br />
-      <h2>{rocketName}</h2>
-      <br />
-      <h2>{description}</h2>
-      <br />
-      <h2>{reserved}</h2>
-      <br />
-      <hr />
-    </div>
+    <li className="rocket-li">
+      <div className="rocket-left-side">
+        <img className="rocket-image" src={flickrImage} alt={flickrImage} />
+      </div>
+      <div className="rocket-right-side">
+        <h2 className="rocket-name">{rocketName}</h2>
+        <p className="rocket-description">
+          {reserved
+            ? <span className="reserved-span">Reserved</span>
+            : <span />}
+          {description}
+        </p>
+        {!reserved
+          ? <button type="button" className="reserve-rocket" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>
+          : <button type="button" className="cancel-rocket-reservation" onClick={() => dispatch(cancelReserveRocket(id))}>Cancel Reservation</button>}
+      </div>
+    </li>
   );
 }

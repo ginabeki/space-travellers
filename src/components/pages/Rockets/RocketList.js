@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Rocket from './Rocket';
+import './rocket.css';
 
 export const RocketList = (props) => {
   const { rockets } = props;
