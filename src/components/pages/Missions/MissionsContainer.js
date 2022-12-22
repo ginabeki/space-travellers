@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { MissionList } from './MissionList';
+import Mission from './Mission';
 import { LoadMissions } from '../../../redux/missions/missions';
 
 export const MissionsContainer = () => {
-  const missions = useSelector((state) => state.missions.missions[0]);
+  const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -13,9 +13,9 @@ export const MissionsContainer = () => {
 
   return (
     <div className="mission-items">
-      <MissionList missions={missions} />
+      <Mission missions={missions} />
     </div>
   );
 };
 
-export default { MissionsContainer };
+export default MissionsContainer;

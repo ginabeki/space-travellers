@@ -1,18 +1,18 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
-import Mission from './Mission';
+// /* eslint-disable react/prop-types */
+// import React from 'react';
+// import Mission from './Mission';
 
-export const MissionList = (props) => {
-  const { missions } = props;
+// export const MissionList = (props) => {
+//   const { missions } = props;
 
-  return (
-    <ul className="each-mission-table">
-      {missions
-        && missions.map((mission) => (
-          <Mission key={mission.id} mission={mission} />
-        ))}
-    </ul>
-  );
-};
+//   return (
+//     <table className="each-mission-table">
+//       {missions
+//         && missions.map((mission) => (
+//           <Mission key={mission.id} mission={mission} />
+//         ))}
+//     </table>
+//   );
+// };
 
-export default MissionList;
+// export default MissionList;
