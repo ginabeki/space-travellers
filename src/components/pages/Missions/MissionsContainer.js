@@ -8,7 +8,9 @@ export const MissionsContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(LoadMissions());
+    if (missions.length === 0) {
+      dispatch(LoadMissions());
+    }
   }, [dispatch]);
 
   return (

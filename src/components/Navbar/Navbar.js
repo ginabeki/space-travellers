@@ -8,11 +8,11 @@ const Navbar = () => (
     <nav className="navbar">
       <div className="logo">
         <img src={logo} alt="logo" />
-        <NavLink to="/" className="logoLink">Space Traveller&apos;s Hub</NavLink>
+        <h2 className="logoLink">Space Traveller&apos;s Hub</h2>
       </div>
       <ul className="menu-items">
         <li>
-          <NavLink to="/rockets">Rockets</NavLink>
+          <NavLink to="/">Rockets</NavLink>
         </li>
         <li>
           <NavLink to="/mission">Missions</NavLink>
