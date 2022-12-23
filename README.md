@@ -41,8 +41,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -144,13 +142,13 @@ To run the project, execute the following command:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Mert Kaya**
 
 - GitHub: [@mkaya13](https://github.com/githubhandle)
 - Twitter: [@mkaya133](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mert-kaya-0732b717b/)
 
-👤 **Author2**
+👤 **Gina Beki**
 
 - GitHub: [@ginabeki](http://github.com/ginabeki)
 - Twitter: [@\_gina_bw](https://twitter.com/_gina_bw)
@@ -181,29 +179,11 @@ Feel free to check the [issues page](https://github.com/ginabeki/space-traveller
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How do you set up react?]**
 
