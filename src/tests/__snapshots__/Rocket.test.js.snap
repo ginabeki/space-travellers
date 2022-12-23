@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket Component Test  Expected to render Rocket contents 1`] = `
+<div
+  className="rocket-items"
+>
+  <ul
+    className="each-rocket-table"
+  />
+</div>
+`;

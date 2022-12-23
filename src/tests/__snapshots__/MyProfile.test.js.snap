@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile Component Test  Expected to render MyProfile contents 1`] = `
+<div
+  className="d-flex w-75 mx-auto mt-4"
+>
+  <div
+    className="my-missions w-50 me-2"
+  >
+    <h4>
+      Rockets
+    </h4>
+    <ul
+      className="list-group"
+    />
+    <h3
+      className="text-danger"
+    >
+      No rockets reserved yet
+    </h3>
+  </div>
+  <div
+    className="my-missions w-50 me-2"
+  >
+    <h4>
+      My Missions
+    </h4>
+    <ul
+      className="list-group"
+    />
+    <h3
+      className="text-danger"
+    >
+      You have not joined any mission yet
+    </h3>
+  </div>
+</div>
+`;
