@@ -7,7 +7,7 @@ import { reserveRocket, cancelReserveRocket } from '../../../redux/rockets/rocke
 export default function Rocket(props) {
   const { rocket } = props;
   const {
-    id, rocketName, description, flickrImage, reserved,
+    rocketName, description, flickrImage, reserved,
   } = rocket;
   const dispatch = useDispatch();
 
@@ -25,8 +25,8 @@ export default function Rocket(props) {
           {description}
         </p>
         {!reserved
-          ? <button type="button" className="reserve-rocket" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>
-          : <button type="button" className="cancel-rocket-reservation" onClick={() => dispatch(cancelReserveRocket(id))}>Cancel Reservation</button>}
+          ? <button type="button" className="reserve-rocket" onClick={() => dispatch(reserveRocket(rocket.id))}>Reserve Rocket</button>
+          : <button type="button" className="cancel-rocket-reservation" onClick={() => dispatch(cancelReserveRocket(rocket.id))}>Cancel Reservation</button>}
       </div>
     </li>
   );

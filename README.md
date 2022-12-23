@@ -57,9 +57,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Space Travellers <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> Space Travellers is a website for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.
 
 **[your_project__name]** is a...
 

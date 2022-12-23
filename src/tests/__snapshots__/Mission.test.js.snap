@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile Component Test  Expected to render MyProfile contents 1`] = `
+<table
+  className="table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        Missions
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+</table>
+`;

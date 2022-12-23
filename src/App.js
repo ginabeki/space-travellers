@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import { MissionsContainer } from './components/pages/Missions/MissionsContainer';
 import { RocketsContainer } from './components/pages/Rockets/RocketsContainer';
-import MyProfile from './components/pages/MyProfile';
+import { MyProfile } from './components/pages/MyProfile';
 
 const app = () => (
   <Router>
