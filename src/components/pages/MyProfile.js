@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const MyProfile = () => {
+export const MyProfile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
   let reservedRockets;
   if (rockets) {
@@ -20,7 +20,9 @@ const MyProfile = () => {
         {reservedRockets && (
           <ul className="list-group">
             {reservedRockets.map((reservedRocket) => (
-              <li key={reservedRocket.id} className="list-group-item">{reservedRocket.rocketName}</li>
+              <li key={reservedRocket.id} className="list-group-item">
+                {reservedRocket.rocketName}
+              </li>
             ))}
           </ul>
         )}
@@ -35,7 +37,9 @@ const MyProfile = () => {
         {reservedMissions && (
           <ul className="list-group">
             {reservedMissions.map((reservedMission) => (
-              <li key={reservedMission.id} className="list-group-item">{reservedMission.missionName}</li>
+              <li key={reservedMission.id} className="list-group-item">
+                {reservedMission.missionName}
+              </li>
             ))}
           </ul>
         )}

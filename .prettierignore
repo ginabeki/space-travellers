@@ -1,2 +1,6 @@
 src/components/pages/Rockets/Rocket.js
 src/components/pages/Rockets/RocketList.js
+src/tests/Navbar.test.js
+src/tests/MyProfile.test.js
+src/tests/Mission.test.js
+src/tests/RocketsContainer.test.js
