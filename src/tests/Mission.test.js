@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { store } from '../redux/configureStore';
 import Mission from '../components/pages/Missions/Mission';
 
-describe('MyProfile Component Test ', () => {
-  it('Expected to render MyProfile contents', () => {
+describe('Mission Component Test ', () => {
+  it('Expected to render Mission contents', () => {
     const ProfileComponent = TestRenderer.create(
       <Provider store={store}>
         <Router>
