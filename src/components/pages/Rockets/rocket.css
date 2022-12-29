@@ -6,7 +6,7 @@
 
 .rocket-li {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   gap: 1rem;
   padding: 2rem;
 }
@@ -64,4 +64,17 @@
 
 .reserved-span + .rocket-description {
   padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .rocket-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
 }
